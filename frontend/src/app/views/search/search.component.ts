@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {MoviesService} from "../../services/movies.service";
 import {AccountService} from "../../services/account.service";
-import {AuthService} from "../../services/auth.service";
+
 import {Router} from '@angular/router';
 import {Observable} from "rxjs";
 import swal from 'sweetalert2';
@@ -23,8 +23,7 @@ export class SearchComponent implements OnInit {
 
   constructor(  private formBuilder: FormBuilder,
     private moviesService: MoviesService,
-    private accountService: AccountService,
-    private authService: AuthService) { }
+    private accountService: AccountService) { }
 	
 
   ngOnInit() {
@@ -33,30 +32,7 @@ export class SearchComponent implements OnInit {
   
     });
 	
-	this.authService.create_access();
 	
-   	/*this.authService.create_request_token().subscribe(
-		(result:any) => {
-			this.authService.get_auth_token(result.request_token).then(
-				auth => {
-					this.authService.create_session(auth.request_token).then(
-						session => {
-							this.session_id = session.session_id;
-							this.accountService.get(this.session_id).subscribe(
-								(account:any) =>  {
-									this.account = account;
-									//console.log(this.account);
-								}
-							);
-						}
-					);
-					
-				}
-			);
-			
-		}
-	);*/
-   
 	
 
   }
@@ -64,14 +40,14 @@ export class SearchComponent implements OnInit {
   favourite(id:number){
 	let post: any = 
 		{
-		  "media_type": "movie",
+		  "media_type": "MOVIE",
 		  "media_id": id,
 		  "favorite": true
 	    }
-		let account = JSON.parse(localStorage.getItem("account"));
-		this.accountService.markFavourite(post, account.id, localStorage.getItem("session_id")).then(
+		
+		this.accountService.markFavourite(post).then(
 			res => {
-				alert("Success");
+				alert(res.status_message);
 			}, err => {
 				console.log(err);
 			}
@@ -81,14 +57,14 @@ export class SearchComponent implements OnInit {
 	watch_list(id:number){
 		let post: any = 
 			{
-			  "media_type": "movie",
+			  "media_type": "MOVIE",
 			  "media_id": id,
 			  "watchlist": true
 		    }
-			let account = JSON.parse(localStorage.getItem("account"));
-			this.accountService.addToWatchList(post, account.id, localStorage.getItem("session_id")).then(
+			
+			this.accountService.addToWatchList(post).then(
 				res => {
-					alert("Success");
+					alert(res.status_message);
 				}, err => {
 					console.log(err);
 				}

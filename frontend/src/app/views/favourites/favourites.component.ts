@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AccountService} from "../../services/account.service";
-import {AuthService} from "../../services/auth.service";
+
 
 //import * as $ from 'jquery';
 //import 'datatables.net';
@@ -17,17 +17,15 @@ export class FavouritesComponent implements OnInit {
   //dataTable: any;
 
   constructor(
-	private accountService: AccountService,
-    private authService: AuthService) { }
+	private accountService: AccountService) { }
 
   ngOnInit() {
-	 this.authService.create_access();
 	 this.get_favourites(0);
   }
 
   get_favourites(page:number) {
-	let account = JSON.parse(localStorage.getItem('account'));
-	this.accountService.favoutiteMovies(account.id, localStorage.getItem("session_id"),page).subscribe(
+	
+	this.accountService.favoutiteMovies(page).subscribe(
 		(favourites:any) => {
 			this.results = favourites.results;
 			
