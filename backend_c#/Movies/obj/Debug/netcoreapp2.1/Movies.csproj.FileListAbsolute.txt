@@ -1,0 +1,14 @@
+C:\Users\Finance Officer\source\repos\Movies\Movies\bin\Debug\netcoreapp2.1\Movies.deps.json
+C:\Users\Finance Officer\source\repos\Movies\Movies\bin\Debug\netcoreapp2.1\Movies.runtimeconfig.json
+C:\Users\Finance Officer\source\repos\Movies\Movies\bin\Debug\netcoreapp2.1\Movies.runtimeconfig.dev.json
+C:\Users\Finance Officer\source\repos\Movies\Movies\bin\Debug\netcoreapp2.1\Movies.dll
+C:\Users\Finance Officer\source\repos\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.csprojAssemblyReference.cache
+C:\Users\Finance Officer\source\repos\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.csproj.CoreCompileInputs.cache
+C:\Users\Finance Officer\source\repos\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.RazorAssemblyInfo.cache
+C:\Users\Finance Officer\source\repos\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.RazorAssemblyInfo.cs
+C:\Users\Finance Officer\source\repos\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.AssemblyInfoInputs.cache
+C:\Users\Finance Officer\source\repos\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.AssemblyInfo.cs
+C:\Users\Finance Officer\source\repos\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.RazorTargetAssemblyInfo.cache
+C:\Users\Finance Officer\source\repos\Movies\Movies\bin\Debug\netcoreapp2.1\Movies.pdb
+C:\Users\Finance Officer\source\repos\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.dll
+C:\Users\Finance Officer\source\repos\Movies\Movies\obj\Debug\netcoreapp2.1\Movies.pdb
