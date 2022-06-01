@@ -22,7 +22,7 @@
     "@angular/router": "~8.2.5",
     "@toverux/ngx-sweetalert2": "^4.0.0",
     "bootstrap": "4.0.0-beta.2",
-    "datatables.net": "^1.10.19",
+    "datatables.net": "^1.11.3",
     "datatables.net-bs4": "^1.10.19",
     "jquery": "^3.4.1",
     "rxjs": "~6.4.0",
